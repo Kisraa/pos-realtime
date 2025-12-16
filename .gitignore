@@ -1,0 +1,11 @@
+# Visual Studio cache
+.vs/
+**/.vs/
+
+# dotnet build outputs
+**/bin/
+**/obj/
+
+# node
+**/node_modules/
+**/dist/

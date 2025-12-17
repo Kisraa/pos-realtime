@@ -20,19 +20,19 @@ export default function Header() {
         <div className="navbar-logo">
           <img src="/images/logo.jpg" alt="Logo" className="navbar-logo-img" />
         </div>
-        <div className="nav-links">
-          <Link 
-            to="/" 
-            className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
-          >
-            {translate('nav.pos')}
-          </Link>
-          <Link 
-            to="/realtime" 
-            className={`nav-link ${location.pathname === '/realtime' ? 'active' : ''}`}
-          >
-            {translate('nav.realtime')}
-          </Link>
+      <div className="nav-links">
+        <Link 
+          to="/" 
+          className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+        >
+          {translate('nav.pos')}
+        </Link>
+        <Link 
+          to="/realtime" 
+          className={`nav-link ${location.pathname === '/realtime' ? 'active' : ''}`}
+        >
+          {translate('nav.realtime')}
+        </Link>
         </div>
       </div>
 

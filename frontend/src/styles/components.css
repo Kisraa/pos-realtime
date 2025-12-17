@@ -1,0 +1,102 @@
+/* Common Components - Snackbar */
+
+/* Snackbar Notifications */
+.snackbar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #323232;
+  color: var(--color-text-white);
+  padding: 20px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-index-snackbar);
+  opacity: 0;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.snackbar-show {
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.snackbar-success {
+  background-color: var(--color-success);
+}
+
+.snackbar-error {
+  background-color: var(--color-error);
+}
+
+.snackbar-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.snackbar-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.snackbar-message {
+  flex: 1;
+  line-height: 1.5;
+}
+
+/* Form Controls */
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: var(--color-bg-secondary);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.form-control::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+}
+

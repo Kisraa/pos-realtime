@@ -1,0 +1,11 @@
+/* Main Styles Entry Point */
+/* Import order matters - variables first, then global, then components */
+
+@import './variables.css';
+@import './global.css';
+@import './layout.css';
+@import './components.css';
+/* App-specific styles are imported in main.jsx */
+@import './pos.css';
+@import './realtime.css';
+

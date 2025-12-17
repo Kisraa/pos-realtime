@@ -1,0 +1,145 @@
+/* Realtime Screen Styles */
+
+.realtime-screen {
+  padding: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1; /* Ensure it takes full height of main-content */
+}
+
+.realtime-screen h1 {
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.status {
+  color: var(--color-success);
+  font-weight: 500;
+  margin-bottom: var(--spacing-xl);
+  padding: 0.75rem;
+  background-color: #d4edda;
+  border-radius: var(--radius-sm);
+  border: 1px solid #c3e6cb;
+}
+
+.empty-orders {
+  text-align: center;
+  color: var(--color-text-secondary);
+  padding: var(--spacing-xxl);
+  font-size: 1.1rem;
+}
+
+.realtime-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1.6fr;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.order-card {
+  background: var(--color-bg-primary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.order-card-selected {
+  border: 2px solid var(--color-primary);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.order-id {
+  font-weight: bold;
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+}
+
+.order-total {
+  color: var(--color-error);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.order-time {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.order-detail-panel {
+  background: var(--color-bg-primary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  min-height: 200px;
+}
+
+.order-detail-empty,
+.order-detail-loading {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.order-detail h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--color-secondary);
+}
+
+.order-detail-time {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.order-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+  font-size: 0.9rem;
+}
+
+.order-detail-table th,
+.order-detail-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+}
+
+.order-detail-table th {
+  background-color: #f8f9fa;
+  text-align: left;
+}
+
+.order-detail-total {
+  text-align: right;
+  font-weight: 700;
+  color: var(--color-error);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-xxl);
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
